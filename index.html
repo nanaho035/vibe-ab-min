@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibe A/B 產生器（最小版）</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Vibe A/B 產生器</h1>
+    <label>主題 <input id="topic" placeholder="例如：考前衝刺筆記" /></label>
+    <label>賣點 <input id="usp" placeholder="例如：10 分鐘整理重點" /></label>
+    <div class="row">
+      <button id="gen">產生 A/B</button>
+      <button id="cycle">切換語氣</button>
+      <span id="vibeTag" class="tag">青春直白</span>
+    </div>
+
+    <section class="cards">
+      <article class="card"><h3>A 版</h3><pre id="outA"></pre></article>
+      <article class="card"><h3>B 版</h3><pre id="outB"></pre></article>
+    </section>
+    <footer>純前端示範｜無追蹤、無後端</footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
